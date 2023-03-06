@@ -1,11 +1,10 @@
 import java.util.*;
 public class Toyfab 
 {
-
-    public Map<Integer, String> toys;
-    public int[] vals = {75, 25, 50, 42, 65, 90, 10};
-    public void Toyfab(String[] abs, int key)
+    public static void main(String[] args) 
     {
+        Map<Integer, String> toys = new HashMap<>();
+        int[] vals = {75, 25, 50, 42, 65, 90, 10, 50};
         toys.put(1, "Игрушка-1");
         toys.put(2, "Игрушка-2");
         toys.put(3, "Игрушка-3");
