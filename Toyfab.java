@@ -28,7 +28,7 @@ public class Toyfab
                     this.key = i;
                 }
             }
-            this.key = rnd.nextInt(vlsize - 0) + 0;
+            this.key = rnd.nextInt(vlsize - key - 0) + 0;
         }
         if (nmbr == key) 
         {
@@ -37,7 +37,7 @@ public class Toyfab
         }
         else if (key == 0) 
         {
-            System.out.println("Ты ничего не получил! Так бывает! Попробуй ещё раз!");
+            System.out.println("Ты ничего не получил! Попробуй ещё раз!");
         }
         else 
         {
