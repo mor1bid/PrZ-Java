@@ -1,15 +1,16 @@
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.*;
 import java.nio.charset.*;
-import java.io.FileWriter;
 
 public class Warehouse {
     int count;
-    public Warehouse(int nmbr) throws IOException
+    public void housedel(int nmbr, int tcount) throws IOException
     {
         String check = Integer.toString(nmbr) + ".";
+        BufferedReader bread = new BufferedReader(new FileReader("Warehouse.txt"));
+        
         FileWriter wh = new FileWriter("Warehouse.txt", false);
+
         for (String line : Files.readAllLines(Paths.get("Warehouse.txt"), StandardCharsets.UTF_8)) 
         {
             if (line.contains(check)) 
@@ -22,4 +23,7 @@ public class Warehouse {
             }
         }
     }
+    // public static void main(String[] args) {
+        
+    // }
 }
